@@ -1,0 +1,3 @@
+<aside class="sidebar" data-sidebar><a class="admin-brand" href="<?= e(base_url('admin/dashboard.php')) ?>"><img src="<?= e(base_url('cars/brand-logo.svg')) ?>" alt="OMODA & JAECOO"><span>DEALER CONSOLE</span></a>
+<nav><a href="<?= e(base_url('admin/dashboard.php')) ?>">ภาพรวม</a><a href="<?= e(base_url('admin/leads.php')) ?>">รายการผู้สนใจ</a><?php if (($_SESSION['role'] ?? '') === 'admin'): ?><a href="<?= e(base_url('admin/staff.php')) ?>">จัดการเจ้าหน้าที่</a><?php endif; ?><a href="<?= e(base_url()) ?>">หน้าเว็บไซต์</a><a class="logout" href="<?= e(base_url('admin/logout.php')) ?>">ออกจากระบบ</a></nav></aside>
+
